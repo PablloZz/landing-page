@@ -20,7 +20,7 @@ main {
     flex: 1;
 }
 
-.header, .hero, .information-container, .testimonial-container {
+.header, .hero, .information-container, .testimonial {
     width: 1000px;
     margin: auto;
 }
@@ -123,4 +123,24 @@ main {
     border-radius: 8px;
 }
 
-/* TESTIMONIAL CONTAINER */
+/* TESTIMONIAL SECTION */
+.testimonial-container {
+    background: #E5E7EB;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    padding: 80px;
+}
+
+.testimonial blockquote {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+}
+
+.testimonial strong {
+    align-self: flex-end;
+}
