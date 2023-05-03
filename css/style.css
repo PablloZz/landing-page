@@ -20,7 +20,7 @@ main {
     flex: 1;
 }
 
-.header, .hero, .information-container {
+.header, .hero, .information-container, .testimonial-container {
     width: 1000px;
     margin: auto;
 }
@@ -122,3 +122,5 @@ main {
     border: 5px solid #3882F6;
     border-radius: 8px;
 }
+
+/* TESTIMONIAL CONTAINER */
