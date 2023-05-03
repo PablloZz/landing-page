@@ -176,3 +176,11 @@ button {
 .signup button {
     border: 1px solid #F9FAF8;
 }
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 24px;
+    background: #1F2937;
+    color: #F9FAF8;
+}
