@@ -20,6 +20,13 @@ main {
     flex: 1;
 }
 
+button {
+    color: #F9FAF8;
+    background: #3882F6;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+
 .header, .hero, .information-container, .testimonial {
     width: 1000px;
     margin: auto;
@@ -75,11 +82,7 @@ main {
 }
 
 .hero .description button {
-    color: #F9FAF8;
-    background: #3882F6;
     border: #3882F6;
-    border-radius: 8px;
-    padding: 8px 16px;
 }
 
 .hero .hero-image {
