@@ -5,22 +5,30 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
+/* GENERAL STYLES */
 body {
     width: 100%;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-.header-container {
-    background: #1F2937;
-    color: #F9FAF8;
+main {
+    flex: 1;
+}
+
+.header, .hero, .information-container {
+    width: 1000px;
+    margin: auto;
 }
 
 /* HEADER AND HERO STYLES */
-.header, .hero {
-    width: 1000px;
-    margin: auto;
+.header-container {
+    background: #1F2937;
+    color: #F9FAF8;
 }
 
 .hero .description p, .header .nav a {
@@ -50,7 +58,7 @@ body {
     display: flex;
     align-items: center;
     gap: 32px;
-    padding: 80px;
+    padding: 80px 0;
 }
 
 .hero .description, .hero .hero-image {
@@ -80,4 +88,37 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* INFORMATION SECTION */
+.information-container {
+    padding: 40px 80px 80px;
+    text-align: center;
+}
+
+.information-container h2 {
+    margin-bottom: 40px;
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.information-container .illustrations {
+    display: flex;
+    gap: 32px;
+}
+
+.illustrations > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    color: #1F2937;
+}
+
+.information-container .illustration-image {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #3882F6;
+    border-radius: 8px;
 }
