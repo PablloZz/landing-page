@@ -25,6 +25,16 @@ button {
     background: #3882F6;
     border-radius: 8px;
     padding: 8px 16px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(1);
 }
 
 .header,
@@ -32,7 +42,7 @@ button {
 .testimonial, 
 .signup {
     width: 1000px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 /* ANIMATIONS */
@@ -64,6 +74,9 @@ button {
 .header-container {
     background: #1F2937;
     color: #F9FAF8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero .description p, .header .nav li a {
@@ -76,6 +89,16 @@ button {
     display: flex;
     align-items: center;
     padding: 10px;
+}
+
+.header::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid #404955;
+    left: 0;
+    right: 0;
+    top: 50px;
 }
 
 .header .logo {
@@ -105,6 +128,7 @@ button {
 
 .header .nav li:hover a {
     color: #cfd2d8;
+    cursor: pointer;
 }
 
 .header .nav li:hover a::after {
@@ -123,6 +147,8 @@ button {
 .hero {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex: 1;
     gap: 32px;
     padding: 80px 0;
 }
@@ -131,13 +157,18 @@ button {
     width: 50%;
 }
 
+.hero .description {
+    align-self: flex-start;
+}
+
 .hero .description h1 {
     font-size: 48px;
     font-weight: 900;
 }
 
 .hero .description p {
-    margin-bottom: 10px;
+    line-height: 125%;
+    margin: 10px 0;
 }
 
 .hero .description button {
@@ -145,11 +176,15 @@ button {
 }
 
 .hero .hero-image {
-    background: #ccc;
-    align-self: stretch;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    display: block;
+    align-self: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease;
+}
+
+.hero .hero-image:hover {
+    transform: scale(1.1);
 }
 
 /* INFORMATION SECTION */
